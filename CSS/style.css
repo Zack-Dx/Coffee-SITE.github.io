@@ -12,7 +12,7 @@
 .navbar {
   width: 100%;
   height: 90px;
-  position: sticky;
+  position: fixed;
   justify-content: left;
 }
 .navbar::before {
@@ -55,7 +55,7 @@
 }
 /* HOME SECTION */
 .home {
-  height: 500px;
+  height: 680px;
   width: 100%;
   color: white;
   flex-direction: column;
@@ -66,12 +66,14 @@
   content: "";
   background: url(../Images/istockphoto-1199467344-170667a.jpg) no-repeat center
     center/cover;
-  height: 100%;
+  height: 660px;
   width: 100%;
   position: absolute;
   top: 0;
   z-index: -1;
-  opacity: 0.89;
+  opacity: 0.99;
+  filter: blur(3px);
+  padding: 12px 0;
 }
 
 .home h1 {
@@ -94,4 +96,50 @@
   border-radius: 34px;
   margin-top: 20px;
   cursor: pointer;
+}
+
+/* Section 1 */
+.section1 {
+  background-color: black;
+  color: white;
+}
+
+.box {
+  display: flex;
+  padding: 30px 0;
+}
+
+.section1 h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  padding-top: 10px;
+}
+
+/* Card Design */
+.card {
+  border: 6px solid rgb(82, 77, 77);
+  display: inline-block;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  background-color: rgb(73, 70, 70);
+  padding: 34px;
+  border-radius: 34px;
+}
+.card h2 {
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
+.card img {
+  height: 150px;
+  width: 80%;
+}
+.card p {
+  text-align: center;
+  padding: 0px px;
 }
