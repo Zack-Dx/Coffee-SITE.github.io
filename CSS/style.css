@@ -143,3 +143,32 @@
   text-align: center;
   padding: 0px px;
 }
+
+/* SPONSORS SECTION */
+
+.sponsors {
+  height: 350px;
+  position: relative;
+}
+.sponsors h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  padding-top: 10px;
+}
+
+.logos img {
+  height: 156px;
+  padding: 50px;
+}
+
+.sponsors::before {
+  content: "";
+  height: 350px;
+  width: 100%;
+  background: url(../Images/pexelsppppto-349609.jpeg) no-repeat center
+    center/cover;
+  z-index: -1;
+  opacity: 0.89;
+  position: absolute;
+  filter: blur(4px);
+}
