@@ -1,11 +1,15 @@
-.flex{
-    display: flex;
+.flex {
+  display: flex;
 }
 
-.justify{
-    justify-content: center;
+.justify {
+  justify-content: center;
 }
 
-.align{
-    align-items: center;
+.align {
+  align-items: center;
+}
+
+.font {
+  font-family: "Baloo 2", cursive;
 }
