@@ -5,6 +5,7 @@
   padding: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
 }
 html {
   scroll-behavior: smooth;
@@ -28,9 +29,6 @@ html {
   left: 0px;
   z-index: -1;
   opacity: 0.7;
-}
-#navbar ul {
-  gap: 60px;
 }
 #navbar ul li {
   list-style: none;
@@ -167,7 +165,7 @@ html {
 
 .logos img {
   height: 156px;
-  padding: 50px;
+  margin: 20px;
 }
 
 #sponsors::before {
@@ -189,7 +187,7 @@ html {
 }
 #contact::before {
   content: "";
-  height: 550px;
+  height: 590px;
   width: 100%;
   background: url(../Images/contact.webp) no-repeat center center/cover;
   z-index: -1;
@@ -209,7 +207,7 @@ html {
 .formgroup input,
 textarea {
   width: 100%;
-  padding: 0.6rem;
+  padding: 0.5rem;
   border: 3px solid black;
   border-radius: 14px;
   font-size: 1rem;
