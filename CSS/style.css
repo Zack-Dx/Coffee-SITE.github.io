@@ -6,17 +6,19 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 /* Navigation Bar Design */
 
-.navbar {
+#navbar {
   width: 100%;
   height: 90px;
   position: fixed;
   justify-content: left;
   z-index: 1;
 }
-.navbar::before {
+#navbar::before {
   content: "";
   background: black;
   height: 100%;
@@ -27,22 +29,22 @@
   z-index: -1;
   opacity: 0.7;
 }
-.navbar ul {
+#navbar ul {
   gap: 60px;
 }
-.navbar ul li {
+#navbar ul li {
   list-style: none;
   font-weight: bold;
   font-size: 1.7rem;
 }
-.navbar ul li a {
+#navbar ul li a {
   color: white;
   padding: 0px 20px;
   text-decoration: none;
   border-radius: 24px;
   font-family: "Baloo 2", cursive;
 }
-.navbar ul li a:hover {
+#navbar ul li a:hover {
   background-color: white;
   color: black;
 }
@@ -54,9 +56,10 @@
   height: 65px;
   border: 2px solid rgb(255, 255, 255);
   border-radius: 90%;
+  cursor: pointer;
 }
 /* HOME SECTION */
-.home {
+#home {
   height: 680px;
   width: 100%;
   color: white;
@@ -64,7 +67,7 @@
   text-align: center;
 }
 
-.home::before {
+#home::before {
   content: "";
   background: url(../Images/istockphoto-1199467344-170667a.jpg) no-repeat center
     center/cover;
@@ -78,18 +81,18 @@
   padding: 12px 0;
 }
 
-.home h1 {
+#home h1 {
   font-size: 3.8rem;
   margin-bottom: 30px;
 }
-.home p {
+#home p {
   text-align: center;
   padding: 0px 200px;
   font-size: 2rem;
 }
 
 .btn1 {
-  padding: 10px;
+  padding: 5px 15px;
   background: black;
   color: white;
   font-size: 1.1rem;
@@ -98,11 +101,16 @@
   margin-top: 20px;
   cursor: pointer;
 }
+.btn1:hover {
+  background-color: white;
+  color: rgb(2, 2, 2);
+  transition: 0.7s;
+}
 
 /* Section 1 */
-.section1 {
+#section1 {
   background-color: black;
-  color: white;
+  color: rgb(240, 240, 240);
 }
 
 .box {
@@ -110,7 +118,7 @@
   padding: 30px 0;
 }
 
-.section1 h1 {
+#section1 h1 {
   text-align: center;
   font-size: 2.5rem;
   padding-top: 10px;
@@ -133,7 +141,7 @@
   border-radius: 34px;
 }
 .card h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 10px 0;
 }
 .card img {
@@ -147,11 +155,11 @@
 
 /* SPONSORS SECTION */
 
-.sponsors {
+#sponsors {
   height: 350px;
   position: relative;
 }
-.sponsors h1 {
+#sponsors h1 {
   text-align: center;
   font-size: 3rem;
   padding-top: 10px;
@@ -162,7 +170,7 @@
   padding: 50px;
 }
 
-.sponsors::before {
+#sponsors::before {
   content: "";
   height: 350px;
   width: 100%;
@@ -175,11 +183,11 @@
 }
 
 /* CONTACT SECTION */
-.contact {
+#contact {
   height: 550px;
   position: relative;
 }
-.contact::before {
+#contact::before {
   content: "";
   height: 550px;
   width: 100%;
@@ -190,11 +198,11 @@
   filter: blur(4px);
 }
 
-.contact h1 {
+#contact h1 {
   text-align: center;
   font-size: 3rem;
 }
-.contact-box form {
+#contact-box form {
   width: 40%;
 }
 
@@ -210,4 +218,17 @@ textarea {
 .formgroup label {
   font-size: 1.4rem;
   font-weight: 600;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  background: black;
+  color: white;
+}
+
+footer p {
+  padding: 20px;
+  font-size: 1.1rem;
+  text-align: center;
 }
