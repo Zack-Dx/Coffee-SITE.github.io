@@ -126,11 +126,10 @@ html {
 .card {
   border: 6px solid rgb(82, 77, 77);
   display: inline-block;
-  width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: auto;
+  margin: 10px 20px;
   text-align: center;
   align-items: center;
   color: rgb(255, 255, 255);
@@ -144,7 +143,6 @@ html {
 }
 .card img {
   height: 150px;
-  width: 80%;
 }
 .card p {
   text-align: center;
@@ -199,9 +197,6 @@ html {
 #contact h1 {
   text-align: center;
   font-size: 3rem;
-}
-#contact-box form {
-  width: 40%;
 }
 
 .formgroup input,
