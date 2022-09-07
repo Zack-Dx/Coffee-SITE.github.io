@@ -18,6 +18,7 @@ html {
   position: fixed;
   justify-content: left;
   z-index: 1;
+backdrop-filter: saturate(180%) blur(10px);
 }
 #navbar::before {
   content: "";
