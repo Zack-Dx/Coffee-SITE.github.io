@@ -1,8 +1,17 @@
 /* Responsive Mobile*/
 @media (max-width: 768px) {
   #navbar {
-    height: 70px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    transition: all 0.9s ease-in-out;
+  }
+  .navigation {
+    display: none;
+  }
+  #navbar ul {
+    flex-direction: column;
   }
   #navbar ul li {
     font-size: 1rem;
@@ -11,7 +20,8 @@
     padding: 0 10px;
   }
   .logo {
-    margin: 2px 10px;
+    margin: 12px 10px;
+    display: none;
   }
   .logo img {
     height: 35px;
@@ -42,6 +52,18 @@
   }
   .contact-box form {
     margin: 10px;
+  }
+  .burger {
+    display: block;
+  }
+  .menu {
+    display: flex;
+  }
+  .h-nav {
+    height: 72px;
+  }
+  .vclass {
+    height: 240px;
   }
 }
 
