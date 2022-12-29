@@ -1,242 +1,256 @@
-@import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
 
 * {
-  margin: 0;
-  padding: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+        sans-serif;
+    box-sizing: border-box;
 }
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
+}
+body {
+    height: 100%;
 }
 /* Navigation Bar Design */
 
 #navbar {
-  width: 100%;
-  position: fixed;
-  justify-content: left;
-  z-index: 1;
-  padding: 20px 10px;
-  backdrop-filter: saturate(180%) blur(10px);
+    width: 100%;
+    position: fixed;
+    justify-content: left;
+    z-index: 1;
+    padding: 20px 10px;
+    backdrop-filter: saturate(180%) blur(10px);
 }
 #navbar::before {
-  content: "";
-  background: black;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: -1;
-  opacity: 0.7;
+    content: '';
+    background: black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.7;
 }
 #navbar ul li {
-  list-style: none;
-  font-weight: bold;
-  font-size: 1.7rem;
+    list-style: none;
+    font-weight: bold;
+    font-size: 1.7rem;
 }
 #navbar ul li a {
-  color: white;
-  padding: 0px 20px;
-  text-decoration: none;
-  border-radius: 24px;
-  font-family: "Baloo 2", cursive;
+    color: white;
+    padding: 0px 20px;
+    text-decoration: none;
+    border-radius: 24px;
+    font-family: 'Baloo 2', cursive;
 }
 #navbar ul li a:hover {
-  background-color: white;
-  color: black;
+    background-color: white;
+    color: black;
 }
 /* Logo Section */
 .logo {
-  margin: 2px 65px;
+    margin: 2px 65px;
 }
 .logo img {
-  height: 65px;
-  border: 2px solid rgb(255, 255, 255);
-  border-radius: 90%;
-  cursor: pointer;
+    height: 65px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 90%;
+    cursor: pointer;
 }
 /* HOME SECTION */
 #home {
-  height: 680px;
-  width: 100%;
-  color: white;
-  flex-direction: column;
-  text-align: center;
+    height: 680px;
+    width: 100%;
+    color: white;
+    flex-direction: column;
+    text-align: center;
 }
 
 #home::before {
-  content: "";
-  background: url(../Images/istockphoto-1199467344-170667a.jpg) no-repeat center
-    center/cover;
-  height: 660px;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  z-index: -1;
-  opacity: 0.99;
-  filter: blur(3px);
-  padding: 12px 0;
+    content: '';
+    background: url(../Images/istockphoto-1199467344-170667a.jpg) no-repeat
+        center center/cover;
+    height: 660px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    opacity: 0.99;
+    filter: blur(3px);
+    padding: 12px 0;
 }
 
 #home h1 {
-  font-size: 3.8rem;
-  margin-bottom: 30px;
+    font-size: 3.8rem;
+    margin-bottom: 30px;
 }
 #home p {
-  text-align: center;
-  padding: 0px 200px;
-  font-size: 2rem;
+    text-align: center;
+    padding: 0px 200px;
+    font-size: 2rem;
 }
 
 .btn1 {
-  padding: 5px 15px;
-  background: black;
-  color: white;
-  font-size: 1.1rem;
-  border: 5px solid #7a590b;
-  border-radius: 34px;
-  margin-top: 20px;
-  cursor: pointer;
+    padding: 5px 15px;
+    background: black;
+    color: white;
+    font-size: 1.1rem;
+    border: 5px solid #7a590b;
+    border-radius: 34px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.btn2 {
+    padding: 5px 15px;
+    background: black;
+    color: white;
+    font-size: 1.1rem;
+    border: 5px solid #7a590b;
+    border-radius: 34px;
+    margin: 10px 0;
+    cursor: pointer;
 }
 .btn1:hover {
-  background-color: white;
-  color: rgb(2, 2, 2);
-  transition: 0.7s;
+    background-color: white;
+    color: rgb(2, 2, 2);
+    transition: 0.7s;
 }
 
 /* Section 1 */
 #section1 {
-  background-color: black;
-  color: rgb(240, 240, 240);
+    background-color: black;
+    color: rgb(240, 240, 240);
 }
 
 .box {
-  display: flex;
-  padding: 30px 0;
+    display: flex;
+    padding: 30px 0;
 }
 
 #section1 h1 {
-  text-align: center;
-  font-size: 2.5rem;
-  padding-top: 10px;
+    text-align: center;
+    font-size: 2.5rem;
+    padding-top: 10px;
 }
 
 /* Card Design */
 .card {
-  border: 6px solid rgb(82, 77, 77);
-  display: inline-block;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 10px 20px;
-  text-align: center;
-  align-items: center;
-  color: rgb(255, 255, 255);
-  background-color: rgb(73, 70, 70);
-  padding: 34px;
-  border-radius: 34px;
+    border: 6px solid rgb(82, 77, 77);
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 20px;
+    text-align: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(73, 70, 70);
+    padding: 34px;
+    border-radius: 34px;
 }
 .card h2 {
-  font-size: 2rem;
-  margin: 10px 0;
+    font-size: 2rem;
+    margin: 10px 0;
 }
 .card img {
-  height: 150px;
+    height: 150px;
 }
 .card p {
-  text-align: center;
-  padding: 0px px;
+    text-align: center;
+    padding: 0px px;
 }
 
 /* SPONSORS SECTION */
 
 #sponsors {
-  height: 350px;
-  position: relative;
+    height: 350px;
+    position: relative;
 }
 #sponsors h1 {
-  text-align: center;
-  font-size: 3rem;
-  padding-top: 10px;
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 10px;
 }
 
 .logos img {
-  height: 156px;
-  margin: 20px;
+    height: 156px;
+    margin: 20px;
 }
 
 #sponsors::before {
-  content: "";
-  height: 350px;
-  width: 100%;
-  background: url(../Images/pexelsppppto-349609.jpeg) no-repeat center
-    center/cover;
-  z-index: -1;
-  opacity: 0.89;
-  position: absolute;
-  filter: blur(4px);
+    content: '';
+    height: 350px;
+    width: 100%;
+    background: url(../Images/pexelsppppto-349609.jpeg) no-repeat center
+        center/cover;
+    z-index: -1;
+    opacity: 0.89;
+    position: absolute;
+    filter: blur(4px);
 }
 
 /* CONTACT SECTION */
 #contact {
-  height: 550px;
-  position: relative;
+    height: 620px;
+    position: relative;
 }
 #contact::before {
-  content: "";
-  height: 590px;
-  width: 100%;
-  background: url(../Images/contact.webp) no-repeat center center/cover;
-  z-index: -1;
-  opacity: 0.6;
-  position: absolute;
-  filter: blur(4px);
+    content: '';
+    height: 620px;
+    width: 100%;
+    background: url(../Images/contact.webp) no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.6;
+    position: absolute;
+    filter: blur(4px);
 }
 
 #contact h1 {
-  text-align: center;
-  font-size: 3rem;
+    text-align: center;
+    font-size: 3rem;
 }
 
 .formgroup input,
 textarea {
-  width: 100%;
-  padding: 0.5rem;
-  border: 3px solid black;
-  border-radius: 14px;
-  font-size: 1rem;
-  outline: none;
+    width: 100%;
+    padding: 0.5rem;
+    border: 3px solid black;
+    border-radius: 14px;
+    font-size: 1rem;
+    outline: none;
 }
 .formgroup label {
-  font-size: 1.4rem;
-  font-weight: 600;
+    font-size: 1.4rem;
+    font-weight: 600;
 }
 
 /* FOOTER SECTION */
 
 footer {
-  background: black;
-  color: white;
+    background: black;
+    color: white;
 }
 
 footer p {
-  padding: 20px;
-  font-size: 1.1rem;
-  text-align: center;
+    padding: 20px;
+    font-size: 1.1rem;
+    text-align: center;
 }
 
 .burger {
-  display: none;
-  position: absolute;
-  cursor: pointer;
-  right: 5%;
-  top: 15px;
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
 }
 .line {
-  width: 33px;
-  background-color: white;
-  height: 4px;
-  margin: 5px 3px;
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
 }
